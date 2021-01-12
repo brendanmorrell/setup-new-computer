@@ -19,6 +19,7 @@ brew install git
 brew install hub
 brew install node
 brew install yarn
+brew install docker-compose
 
 # (possibly) install useful global npm libraries. may just be better to always use npx
 # npm i -g localtunnel
@@ -129,6 +130,12 @@ osascript -e 'tell application "iTerm"
     end repeat
 end tell'
 
+# PLAYBOY
+# open all three ovpn files
+# add this to zshrc:
+# CODE_DIR=$HOME/Desktop/code
+# alias pb="cd $CODE_DIR/playboymono && sh ./lib/dev-tools/dotcom.sh ~/Desktop/code/playboymono"
+# if you need to rebuild mono, run ""./rebuild.sh -c -r -i -a"
 
 
 

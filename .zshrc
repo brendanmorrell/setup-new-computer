@@ -13,6 +13,7 @@ export ZSH="/Users/bmorrell/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 ZSH_DISABLE_COMPFIX="true"
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -120,5 +121,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+CODE_DIR=$HOME/Desktop/code
 
+alias pb="cd $CODE_DIR/playboymono && sh ./lib/dev-tools/dotcom.sh ~/Desktop/code/playboymono"
 
