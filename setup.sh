@@ -19,6 +19,7 @@ brew install git
 brew install hub
 # brew install --cask alfred
 # brew install --cask slack
+# brew install --cask google-chrome
 # brew install --cask postman
 brew install node
 brew install --cask iterm2
@@ -30,6 +31,7 @@ brew install --cask vlc
 brew install --cask android-messages
 brew install --cask superduper
 brew install --cask graphiql
+brew install --cask numi
 
 # Should test these on machine with admin to see if the brew cask installs are enough. might not need these steps
 # install copy clip 2 and register it using this key:
@@ -37,8 +39,6 @@ brew install --cask graphiql
 
 # install better touch tool and install it using this url:
 # https://folivora.ai/retrievelicense/?id=68128247-chre8adbe9984c0-f7955cf762&email=brendanmorrell%40gmail.com
-
-
 
 
 # Install vscode fonts and theme
@@ -102,7 +102,9 @@ exit 0
 
 # sync vscode settings (Cmd shit P, settings ync, sign in to github and choose most recent)
 
-# set iterm to use modifer keys correctly
+# change option modifier key to escape for terminal word navigation
+# iterm -> profiles -> keys -> left option key as Esc+
+
 # set iterm to have a hotkey keys-> create a dedicated hotkey window ->option + /, uncheck animate showing/hiding. d
 
 # disable highlighting active terminal
