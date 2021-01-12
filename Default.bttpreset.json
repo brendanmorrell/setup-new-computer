@@ -144,7 +144,7 @@
     "showOtherTriggersTab": true,
     "BSTSnapAreaDefaultPictoDistanceFromLeft": 0.10000000149011612
   },
-  "BTTPresetUUID": "F98CC52F-1E52-4779-8380-3C38D109477D",
+  "BTTPresetUUID": "BA41EBA6-CA3D-48DD-BCEA-9A2D4BF78174",
   "BTTPresetContent": [
     {
       "BTTAppBundleIdentifier": "BT.G",
@@ -164,7 +164,7 @@
           "BTTNotesInsteadOfDescription": 0,
           "BTTEnabled": 1,
           "BTTModifierMode": 0,
-          "BTTOrder": 1,
+          "BTTOrder": 0,
           "BTTDisplayOrder": 0
         },
         {
@@ -180,7 +180,7 @@
           "BTTNotesInsteadOfDescription": 0,
           "BTTEnabled": 1,
           "BTTModifierMode": 0,
-          "BTTOrder": 4,
+          "BTTOrder": 3,
           "BTTDisplayOrder": 0
         },
         {
@@ -196,7 +196,23 @@
           "BTTNotesInsteadOfDescription": 0,
           "BTTEnabled": 1,
           "BTTModifierMode": 0,
-          "BTTOrder": 3,
+          "BTTOrder": 2,
+          "BTTDisplayOrder": 0
+        },
+        {
+          "BTTTriggerType": 175,
+          "BTTTriggerTypeDescription": "2 Finger Force Click",
+          "BTTTriggerClass": "BTTTriggerTypeTouchpadAll",
+          "BTTPredefinedActionType": 2,
+          "BTTPredefinedActionName": "CMD(⌘)+Click",
+          "BTTEnabled2": 1,
+          "BTTAlternateModifierKeys": 0,
+          "BTTRepeatDelay": 0,
+          "BTTUUID": "18505BE0-C5C3-4BB4-92DA-020493CBD215",
+          "BTTNotesInsteadOfDescription": 0,
+          "BTTEnabled": 1,
+          "BTTModifierMode": 0,
+          "BTTOrder": 5,
           "BTTDisplayOrder": 0
         },
         {
@@ -242,19 +258,19 @@
           "BTTAutoAdaptToKeyboardLayout": 0
         },
         {
-          "BTTTriggerType": 175,
-          "BTTTriggerTypeDescription": "2 Finger Force Click",
+          "BTTTriggerType": 174,
+          "BTTTriggerTypeDescription": "2 Finger Click",
           "BTTTriggerClass": "BTTTriggerTypeTouchpadAll",
-          "BTTPredefinedActionType": 2,
-          "BTTPredefinedActionName": "CMD(⌘)+Click",
+          "BTTPredefinedActionType": 4,
+          "BTTPredefinedActionName": "Right Click",
           "BTTEnabled2": 1,
           "BTTAlternateModifierKeys": 0,
           "BTTRepeatDelay": 0,
-          "BTTUUID": "930D83F3-A2F2-4F7A-8994-0267A3191CC4",
+          "BTTUUID": "1F52CEFA-CBCC-40C3-8D6C-3E8C705E40D5",
           "BTTNotesInsteadOfDescription": 0,
           "BTTEnabled": 1,
           "BTTModifierMode": 0,
-          "BTTOrder": 0,
+          "BTTOrder": 4,
           "BTTDisplayOrder": 0
         },
         {
@@ -270,7 +286,7 @@
           "BTTNotesInsteadOfDescription": 0,
           "BTTEnabled": 1,
           "BTTModifierMode": 0,
-          "BTTOrder": 2,
+          "BTTOrder": 1,
           "BTTDisplayOrder": 0
         },
         {
@@ -329,6 +345,45 @@
             {
               "BTTTriggerType": -1,
               "BTTTriggerClass": "BTTTriggerTypeKeyboardShortcut",
+              "BTTPredefinedActionType": 129,
+              "BTTPredefinedActionName": "Delay Next Action",
+              "BTTDelayNextActionBy": "0.2",
+              "BTTEnabled2": 1,
+              "BTTKeyboardShortcutKeyboardType": 0,
+              "BTTRepeatDelay": 0,
+              "BTTUUID": "1F4CB87A-16CA-46DE-9276-243E5F9695B5",
+              "BTTNotesInsteadOfDescription": 0,
+              "BTTEnabled": 1,
+              "BTTModifierMode": 0,
+              "BTTShortcutKeyCode": -1,
+              "BTTShortcutModifierKeys": -1,
+              "BTTOrder": 0,
+              "BTTDisplayOrder": 0,
+              "BTTAutoAdaptToKeyboardLayout": 0
+            },
+            {
+              "BTTTriggerType": -1,
+              "BTTTriggerClass": "BTTTriggerTypeKeyboardShortcut",
+              "BTTPredefinedActionType": 177,
+              "BTTPredefinedActionName": "Show / Hide Specific Application",
+              "BTTAppToShowOrHide": "file:///Applications/Google%20Chrome.app",
+              "BTTShowHideAppConfig": "{\"BTTShowHideSpecificAppOnlyHide\":false,\"BTTShowHideSpecificAppOnlyIfRunning\":false,\"BTTShowHideSpecificAppCMDN\":true,\"BTTShowHideSpecificAppOnlyShow\":true}",
+              "BTTEnabled2": 1,
+              "BTTKeyboardShortcutKeyboardType": 0,
+              "BTTRepeatDelay": 0,
+              "BTTUUID": "8E51E895-6F22-4A23-BADA-B175BE01DE83",
+              "BTTNotesInsteadOfDescription": 0,
+              "BTTEnabled": 1,
+              "BTTModifierMode": 0,
+              "BTTShortcutKeyCode": -1,
+              "BTTShortcutModifierKeys": -1,
+              "BTTOrder": 1,
+              "BTTDisplayOrder": 0,
+              "BTTAutoAdaptToKeyboardLayout": 0
+            },
+            {
+              "BTTTriggerType": -1,
+              "BTTTriggerClass": "BTTTriggerTypeKeyboardShortcut",
               "BTTPredefinedActionType": 128,
               "BTTPredefinedActionName": "Send Shortcut to Specific App",
               "BTTLayoutIndependentActionChar": "file:///Applications/Google%20Chrome.app",
@@ -346,47 +401,6 @@
               "BTTShortcutKeyCode": -1,
               "BTTShortcutModifierKeys": -1,
               "BTTOrder": 2,
-              "BTTDisplayOrder": 0,
-              "BTTAutoAdaptToKeyboardLayout": 0
-            },
-            {
-              "BTTTriggerType": -1,
-              "BTTTriggerClass": "BTTTriggerTypeKeyboardShortcut",
-              "BTTPredefinedActionType": 129,
-              "BTTPredefinedActionName": "Delay Next Action",
-              "BTTDelayNextActionBy": "2",
-              "BTTEnabled2": 1,
-              "BTTKeyboardShortcutKeyboardType": 0,
-              "BTTRepeatDelay": 0,
-              "BTTUUID": "1F4CB87A-16CA-46DE-9276-243E5F9695B5",
-              "BTTNotesInsteadOfDescription": 0,
-              "BTTEnabled": 1,
-              "BTTModifierMode": 0,
-              "BTTShortcutKeyCode": -1,
-              "BTTShortcutModifierKeys": -1,
-              "BTTOrder": 3,
-              "BTTDisplayOrder": 0,
-              "BTTAutoAdaptToKeyboardLayout": 0
-            },
-            {
-              "BTTTriggerType": -1,
-              "BTTTriggerClass": "BTTTriggerTypeKeyboardShortcut",
-              "BTTPredefinedActionType": 128,
-              "BTTPredefinedActionName": "Send Shortcut to Specific App",
-              "BTTLayoutIndependentActionChar": "file:///Applications/Google%20Chrome.app",
-              "BTTAutoAdaptActionToKeyboardLayout": true,
-              "BTTShortcutApp": "file:///Applications/Google%20Chrome.app",
-              "BTTShortcutToSend": "55,15",
-              "BTTEnabled2": 1,
-              "BTTKeyboardShortcutKeyboardType": 0,
-              "BTTRepeatDelay": 0,
-              "BTTUUID": "3587DB43-BD5E-400B-A12A-10CE9F6677AF",
-              "BTTNotesInsteadOfDescription": 0,
-              "BTTEnabled": 1,
-              "BTTModifierMode": 0,
-              "BTTShortcutKeyCode": -1,
-              "BTTShortcutModifierKeys": -1,
-              "BTTOrder": 4,
               "BTTDisplayOrder": 0,
               "BTTAutoAdaptToKeyboardLayout": 0
             }
