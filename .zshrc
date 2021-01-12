@@ -123,5 +123,5 @@ fi
 
 CODE_DIR=$HOME/Desktop/code
 
-alias pb="cd $CODE_DIR/playboymono && sh ./lib/dev-tools/dotcom.sh ~/Desktop/code/playboymono"
+alias pb="cd $CODE_DIR/playboymono && sh ./lib/dev-tools/dotcom.sh $CODE_DIR/playboymono"
 

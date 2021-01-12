@@ -33,6 +33,8 @@ brew install docker-compose
 # brew install --cask slack
 # brew install --cask google-chrome
 # brew install --cask postman
+# system preferences -> keyboard -> customize control strip
+# system preferences -> keyboard -> touch bar shows expanded control strip
 brew install --cask iterm2
 brew install --cask appcleaner
 brew install --cask docker
@@ -45,6 +47,7 @@ brew install --cask graphiql
 brew install --cask numi
 brew install --cask spotify
 brew install --cask yt-music
+brew install --cask mutespotifyads
 
 # Should test these on machine with admin to see if the brew cask installs are enough. might not need these steps
 # install copy clip 2 and register it using this key:
@@ -67,11 +70,14 @@ defaults write com.apple.dock autohide -bool TRUE
 defaults write com.apple.dock mru-spaces -bool false
 # show hidden files and folders
 defaults write com.apple.Finder AppleShowAllFiles -bool true
-killall FInder
-killall Dock
-# defaults write com.apple.dock tilesize -float 16
 defaults write com.apple.finder QLEnableTextSelection -bool TRUE
 defaults write com.apple.finder AppleShowAllFiles -bool TRUE
+defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
+defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
+defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
+killall Finder
+killall Dock
+# defaults write com.apple.dock tilesize -float 16
 
 # Set mac theme to dark mode
 osascript -e 'tell app "System Events" to tell appearance preferences to set dark mode to not dark mode'
@@ -103,6 +109,7 @@ exit 0
 # TODO look into setting these preferences and adding lines to zshrc programattically
 # preferences -> keyboard -> key repeat and delay until repeat both at fastest
 # preferences -> accessibility -> control key zoom modifier true
+# preferences -> bluetooth -> show bluetooth in menu
 
 
 # SSH for github
@@ -121,7 +128,10 @@ exit 0
 # deactivate inactive window dimming in iterm
 # 
 
-# set iterm to have a hotkey keys-> create a dedicated hotkey window ->option + /, uncheck animate showing/hiding. d
+# set iterm to have a hotkey keys-> create a dedicated hotkey window ->option + /, uncheck animate showing/hiding.
+# preferences -> general -> selection -> double click performs smart selection
+# preferences -> profile -> terminal -> unlimited scrollback
+# preferences -> profile -> general -> working directory = $CODE_DIR
 
 # disable highlighting active terminal
 osascript -e 'tell application "iTerm"
@@ -138,7 +148,7 @@ end tell'
 # open all three ovpn files
 # add this to zshrc:
 # CODE_DIR=$HOME/Desktop/code
-# alias pb="cd $CODE_DIR/playboymono && sh ./lib/dev-tools/dotcom.sh ~/Desktop/code/playboymono"
+# alias pb="cd $CODE_DIR/playboymono && sh ./lib/dev-tools/dotcom.sh $CODE_DIR/playboymono"
 # if you need to rebuild mono, run ""./rebuild.sh -c -r -i -a"
 
 
