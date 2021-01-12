@@ -44,6 +44,7 @@ brew install --cask superduper
 brew install --cask graphiql
 brew install --cask numi
 brew install --cask spotify
+brew install --cask yt-music
 
 # Should test these on machine with admin to see if the brew cask installs are enough. might not need these steps
 # install copy clip 2 and register it using this key:
@@ -51,7 +52,7 @@ brew install --cask spotify
 
 # install better touch tool and install it using this url:
 # https://folivora.ai/retrievelicense/?id=68128247-chre8adbe9984c0-f7955cf762&email=brendanmorrell%40gmail.com
-
+# set both of these to start on startup
 
 # Install vscode fonts and theme
 brew tap homebrew/cask-fonts
@@ -99,7 +100,7 @@ exit 0
 
 
 
-# TODO
+# TODO look into setting these preferences and adding lines to zshrc programattically
 # preferences -> keyboard -> key repeat and delay until repeat both at fastest
 # preferences -> accessibility -> control key zoom modifier true
 
@@ -116,6 +117,9 @@ exit 0
 
 # change option modifier key to escape for terminal word navigation
 # iterm -> profiles -> keys -> left option key as Esc+
+
+# deactivate inactive window dimming in iterm
+# 
 
 # set iterm to have a hotkey keys-> create a dedicated hotkey window ->option + /, uncheck animate showing/hiding. d
 
