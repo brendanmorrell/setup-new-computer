@@ -17,11 +17,21 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 # Install brew packages
 brew install git
 brew install hub
+brew install node
+brew install yarn
+
+# (possibly) install useful global npm libraries. may just be better to always use npx
+# npm i -g localtunnel
+# npm i -g nodemon
+# npm i -g serve
+# npm i -g create-react-app
+# npm i -g eslint
+
+# install applications through brew
 # brew install --cask alfred
 # brew install --cask slack
 # brew install --cask google-chrome
 # brew install --cask postman
-brew install node
 brew install --cask iterm2
 brew install --cask appcleaner
 brew install --cask docker
@@ -32,6 +42,7 @@ brew install --cask android-messages
 brew install --cask superduper
 brew install --cask graphiql
 brew install --cask numi
+brew install --cask spotify
 
 # Should test these on machine with admin to see if the brew cask installs are enough. might not need these steps
 # install copy clip 2 and register it using this key:
