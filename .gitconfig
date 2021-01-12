@@ -1,0 +1,38 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+        name = Brendan Morrell
+        email = brendanmorrell@gmail.com
+[alias]
+        up = !git pull --rebase --prune $@
+        ec = config --global -e
+        bclean = "!f() { git checkout ${1-develop} && git branch --merged ${1-develop} | grep -v " ${1-develop}$" | xargs git branch -d; }; f"
+        stash-push = "!f() { git cob git rev-parse --abbrev-ref HEAD}; f"
+        bdone = "!f() { git checkout ${1-develop} && git up && git bclean ${1-develop}; }; f"
+        recent = branch --sort='-committerdate' --format='%(refname)%09%(committerdate)'
+        co = checkout
+        start = pull --rebase --prune
+        cob = checkout -b
+        cod = checkout develop
+        com = checkout master
+        po = push origin
+        pod = push origin develop
+        poc = push origin head
+        pocnv = push origin head --no-verify
+        pom = push origin master
+        pl = pull
+        plo = pull origin
+        plod = pull origin develop
+        ploc = pull origin head
+        plom = pull origin master
+        cm = !git add -A && git commit -m
+        save = "!f(){ git add -A && git commit -m ${1-SAVEPOINT}; };f"
+        wip = "!f() { git commit -am ${1-WIP}; };f"
+        stash-all = stash -u
+        undo = reset HEAD~1 --mixed
+        cane = !git add -A && git commit --amend --no-edit
+        wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
+        recent = !git for-each-ref --sort='-committerdate' --format='%(refname)%09%(committerdate)' refs/heads | sed -e 's-refs/heads/--'
+        ls = log --color --graph --pretty=:format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[init]
+	defaultBranch = main
