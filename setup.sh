@@ -29,6 +29,7 @@ brew install --cask lastpass
 brew install --cask vlc
 brew install --cask android-messages
 brew install --cask superduper
+brew install --cask graphiql
 
 # Should test these on machine with admin to see if the brew cask installs are enough. might not need these steps
 # install copy clip 2 and register it using this key:
@@ -66,8 +67,10 @@ osascript -e 'tell app "System Events" to tell appearance preferences to set dar
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 #Install Powerline Them. After this step, boot up iterm and follow promptse
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
-echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>! ~/.zshrc
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+# add ZSH_THEME="powerlevel10k/powerlevel10k" to zshrc
+# can try the line below. not sure if this adds it automatically
+# echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>! ~/.zshrc
 
 # add Z to plugins section of .zshrc and download file
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -112,3 +115,11 @@ osascript -e 'tell application "iTerm"
         end tell
     end repeat
 end tell'
+
+
+
+
+# MEDMEN
+# globalprotect.medmen.com
+# download outlook
+# download clockify
