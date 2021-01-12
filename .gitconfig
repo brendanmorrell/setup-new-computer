@@ -6,7 +6,7 @@
         up = !git pull --rebase --prune $@
         ec = config --global -e
         bclean = "!f() { git checkout ${1-develop} && git branch --merged ${1-develop} | grep -v " ${1-develop}$" | xargs git branch -d; }; f"
-        push-stash = "!f(){ git stash-all; branch=$(git rev-parse --abbrev-ref HEAD); date=$(date '+%m-%d-%Y_%H.%M'); spacer='_(stash_'; name='$branch$spacer$date'; name+=')'; git cob $name; git stash apply; message_start='Savepoint stash push for '; full_message='$message_start$branch'; git cm $full_message; git pocnv; git co -; git stash apply; };f;"
+        push-stash = "!f(){ git stash-all; branch=$(git rev-parse --abbrev-ref HEAD); date=$(date '+%m-%d-%Y_%H.%M'); spacer='_(stash_'; name='$branch$spacer$date'; name+=')'; git cob $name; git stash apply; git cm 'stash push savepoint'; git pocnv; git co -; git stash apply; };f;"
         bdone = "!f() { git checkout ${1-develop} && git up && git bclean ${1-develop}; }; f"
         recent = branch --sort='-committerdate' --format='%(refname)%09%(committerdate)'
         co = checkout
@@ -35,4 +35,3 @@
         ls = log --color --graph --pretty=:format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [init]
 	defaultBranch = main
-# 
