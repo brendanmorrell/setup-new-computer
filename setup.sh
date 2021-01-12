@@ -17,9 +17,9 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 # Install brew packages
 brew install git
 brew install hub
-# brew cask install alfred
-# brew cask install slack
-# brew cask install postman
+# brew install --cask alfred
+# brew install --cask slack
+# brew install --cask postman
 brew install node
 brew install --cask iterm2
 brew install --cask appcleaner
@@ -48,8 +48,6 @@ brew install --cask font-fira-code
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 
 # Configure dock
-defaults write com.apple.dock static-only -bool TRUE
-defaults write com.apple.dock orientation -string left
 defaults write com.apple.dock autohide -bool TRUE
 # not positive this works
 defaults write com.apple.dock mru-spaces -bool false
@@ -104,7 +102,7 @@ exit 0
 # set iterm to use modifer keys correctly
 # set iterm to have a hotkey keys-> create a dedicated hotkey window ->option + /, uncheck animate showing/hiding. d
 
-# disable highlighting active terminal (this doesnt seem to work yet)
+# disable highlighting active terminal
 osascript -e 'tell application "iTerm"
     repeat with aWindow in windows
         tell aWindow
