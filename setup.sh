@@ -20,7 +20,7 @@ brew install hub
 brew install node
 brew install yarn
 brew install docker-compose
-
+brew install trash
 # (possibly) install useful global npm libraries. may just be better to always use npx
 # npm i -g localtunnel
 # npm i -g nodemon
@@ -132,6 +132,7 @@ exit 0
 # preferences -> general -> selection -> double click performs smart selection
 # preferences -> profile -> terminal -> unlimited scrollback
 # preferences -> profile -> general -> working directory = $CODE_DIR
+# set location to allowed in security settings -> apps -> chrome
 
 # disable highlighting active terminal
 osascript -e 'tell application "iTerm"
@@ -150,7 +151,6 @@ end tell'
 # CODE_DIR=$HOME/Desktop/code
 # alias pb="cd $CODE_DIR/playboymono && sh ./lib/dev-tools/dotcom.sh $CODE_DIR/playboymono"
 # if you need to rebuild mono, run ""./rebuild.sh -c -r -i -a"
-
 
 
 # MEDMEN
