@@ -19,11 +19,11 @@
         poc = push origin head
         pocnv = push origin head --no-verify
         pom = push origin master
-        pl = pull
-        plo = pull origin
-        plod = pull origin develop
-        ploc = pull origin head
-        plom = pull origin master
+        pl = pull --ff
+        plo = pull origin --ff
+        plod = pull origin develop --ff
+        ploc = pull origin head --ff
+        plom = pull origin master --ff
         cm = !git add -A && git commit -m
         save = "!f(){ git add -A && git commit -m ${1-SAVEPOINT}; };f"
         wip = "!f() { git commit -am ${1-WIP}; };f"
