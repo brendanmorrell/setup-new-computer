@@ -133,6 +133,7 @@ exit 0
 # preferences -> profile -> terminal -> unlimited scrollback
 # preferences -> profile -> general -> working directory = $CODE_DIR
 # set location to allowed in security settings -> apps -> chrome
+# keyboard -> shortcuts -> disable move left/right a space with control + arrows
 
 # disable highlighting active terminal
 osascript -e 'tell application "iTerm"
