@@ -6,10 +6,10 @@
     "BTTPathSampleSize" : 100,
     "BTTCMOnTop" : true,
     "BTTForceForceClickPressure2F" : 700,
-    "BSTLeftHalfBlock" : true,
+    "BSTLeftHalfBlock" : false,
     "BTTMinDrawingMovement" : 2,
     "BTTTouchBarMouseModeClickBlock" : true,
-    "BSTRightHalfBlock" : true,
+    "BSTRightHalfBlock" : false,
     "disableScrollingIf2" : true,
     "batteryWarning" : false,
     "BSTDontShowSnapAreasWhileModMoving" : 0,
@@ -144,7 +144,7 @@
     "showOtherTriggersTab" : true,
     "BSTSnapAreaDefaultPictoDistanceFromLeft" : 0.10000000149011612
   },
-  "BTTPresetUUID" : "99C0128D-E017-4DF6-9692-99103934EAC0",
+  "BTTPresetUUID" : "A53ABB97-DE1D-422F-B044-DCF46B82FA21",
   "BTTPresetContent" : [
     {
       "BTTAppBundleIdentifier" : "com.googlecode.iterm2",
