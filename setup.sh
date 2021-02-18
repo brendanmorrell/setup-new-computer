@@ -134,6 +134,7 @@ exit 0
 # preferences -> profile -> general -> working directory = $CODE_DIR
 # set location to allowed in security settings -> apps -> chrome
 # keyboard -> shortcuts -> disable move left/right a space with control + arrows
+# settings -> siri -> disable ask siri
 
 # disable highlighting active terminal
 osascript -e 'tell application "iTerm"
@@ -158,3 +159,6 @@ end tell'
 # globalprotect.medmen.com
 # download outlook
 # download clockify
+
+
+# press command shift 4 and then in the screenshot bar click options and disable 'show floating screenshot'
