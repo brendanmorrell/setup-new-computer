@@ -162,3 +162,5 @@ end tell'
 
 
 # press command shift 4 and then in the screenshot bar click options and disable 'show floating screenshot'
+
+# press and hold the Command key, then drag vscode to the Finder toolbar.
