@@ -48,6 +48,7 @@ brew install --cask numi
 brew install --cask spotify
 brew install --cask yt-music
 brew install --cask mutespotifyads
+brew install --cask paintbrush
 
 # Should test these on machine with admin to see if the brew cask installs are enough. might not need these steps
 # install copy clip 2 and register it using this key:
